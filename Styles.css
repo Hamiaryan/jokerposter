@@ -16,7 +16,7 @@ body {
   overflow: hidden;
   width: remy(720px);
   height: remy(320px);
-  background: url(images/movie.jpg), rgb(10,10,10);
+  background: url(https://github.com/Hamiaryan/jokerposter/blob/main/images/movie.jpg), rgb(10,10,10);
   background-position: -60px 42px, 0;
   background-repeat: no-repeat;
   background-size: 70% 88%;
