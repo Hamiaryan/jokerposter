@@ -15,7 +15,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;
-  width: remy(20px);
+  width: remy(50%);
   height: remy(320px);
   background: url(images/movie.jpg), rgb(10,10,10);
   background-position: -60px 42px, 0;
