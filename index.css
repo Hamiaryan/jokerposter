@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+
+body {
+  font-size: 100%;
+  font-family: 'Arial', sans-serif;
+  background: #000000;
+}
+
+.card {
+  position: relative;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  width: remy(20px);
+  height: remy(320px);
+  background: url(images/movie.jpg), rgb(10,10,10);
+  background-position: -60px 42px, 0;
+  background-repeat: no-repeat;
+  background-size: 70% 88%;
+}
+
+.card__inner {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+.list {
+  display: flex;
+}
+
+.list--nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.list--nav li {
+  width: calc(100% / 3);
+  background: none;
+  text-align: center;
+}
+
+.list--nav a {
+  display: block;
+  padding: 0.85rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fbff04;
+  transition: color 0.3s ease;
+}
+
+.card__body {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__info {
+  color: #ff0000;
+  position: relative;
+  padding-right: 1.25rem;
+  width: 70%;
+  flex-basis: 50%;
+}
+
+.card__title {
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+  font-size: 2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.card__slug {
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.card__btn {
+  display: inline-block;
+  padding: .65rem 1.5rem;
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: remy(5px);
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #007bff;
+  border: 0;
+  border-radius: remy(10px);
+  box-shadow: $boxshadow-2;
+  margin-top: 5px;
+  padding: 10px 20px;
+}
+
+.card__video {
+  float: right;
+  width: 580px;
+  height: 320px;
+  margin-right: 0px;
+  flex-basis: 30%;
+}
+
+.imdb-info {
+  position: fixed;
+  bottom: 0;
+  left: 60%;
+  right: 0;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.imdb-logo {
+  width: 30px;
+  height: 15px;
+  margin-right: 10px;
+}
