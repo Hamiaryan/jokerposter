@@ -1,35 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
+
+
 body {
   font-size: 100%;
   font-family: 'Arial', sans-serif;
   background: #000000;
 }
 
-
-
 .card {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;
-  width: remy(720px);
+  width: remy(20px);
   height: remy(320px);
-  background: url(https://github.com/Hamiaryan/jokerposter/blob/main/images/movie.jpg), rgb(10,10,10);
+  background: url(images/movie.jpg), rgb(10,10,10);
   background-position: -60px 42px, 0;
   background-repeat: no-repeat;
   background-size: 70% 88%;
-
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(10,10,10,.15);
-  }
 }
 
 .card__inner {
@@ -65,36 +56,29 @@ body {
   transition: color 0.3s ease;
 }
 
-
-
-
 .card__body {
   position: absolute;
   top: 20%;
   transform: translateY(-50%);
   display: flex;
-  justify-content: space-between; /* Keep this line to add space between elements */
+  justify-content: space-between;
 }
 
 .card__info {
   color: #ff0000;
-}
-
-.card__info {
   position: relative;
   padding-right: 1.25rem;
   width: 70%;
-  flex-basis: 50%; /* Add this line */
+  flex-basis: 50%;
 }
 
 .card__title {
-  margin-bottom: 3rem; /* Keep the existing margin-bottom value */
-  margin-top: 0.5rem; /* Add a negative margin-top to move the title upward */
+  margin-bottom: 1rem;
+  margin-top: 0rem;
   font-size: 2rem;
   font-weight: 200;
   text-transform: uppercase;
 }
-
 
 .card__slug {
   margin-bottom: 1rem;
@@ -108,56 +92,37 @@ body {
   font-weight: 600;
   letter-spacing: remy(5px);
   text-transform: uppercase;
-  color: #ffffff; /* Change the text color to white */
-  background-color: #007bff; /* Change the background color to a blue color */
+  color: #000000;
+  background-color: #007bff;
   border: 0;
   border-radius: remy(10px);
   box-shadow: $boxshadow-2;
-  margin-top: 5px; /* Update this line */
-
-  /* Only need one padding declaration */
-  padding: 10px 20px; /* Update the padding as needed */
+  margin-top: 5px;
+  padding: 10px 20px;
 }
 
-
-
-
-/* Styles for the video player container */
 .card__video {
-  float: right; /* Change from "right" to "left" */
-  width: 640px;
-  height: 360px;
-  margin-right: 20px; /* Add some right margin for spacing */
-  flex-basis: 30%; /* Add this line */
+  float: right;
+  width: 580px;
+  height: 320px;
+  margin-right: 0px;
+  flex-basis: 30%;
 }
 
-
-
-
-
-/* IMDb Information */
 .imdb-info {
   position: fixed;
   bottom: 0;
   left: 60%;
   right: 0;
-  padding: 20px;
+  padding: 5px;
   background-color: rgba(0, 0, 0, 0.8);
   color: #ffffff;
   display: flex;
   align-items: center;
 }
 
-/* Styles for the IMDb logo */
 .imdb-logo {
   width: 30px;
   height: 15px;
   margin-right: 10px;
 }
-
-
-
-
-
-
-
