@@ -1,134 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joker Movie</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
-  <style>
-    body {
-      font-size: 100%;
-      font-family: 'Arial', sans-serif;
-      background: #000000;
-    }
-
-    .card {
-      position: relative;
-      margin-top: 2rem;
-      margin-right: auto;
-      margin-left: auto;
-      overflow: hidden;
-      width: 720px;
-      height: 320px;
-      background: url(images/movie.jpg), rgb(10,10,10);
-      background-position: -60px 42px, 0;
-      background-repeat: no-repeat;
-      background-size: 70% 88%;
-    }
-
-    .card__inner {
-      position: relative;
-      z-index: 2;
-      height: 100%;
-    }
-
-    .list {
-      display: flex;
-    }
-
-    .list--nav {
-      display: flex;
-      justify-content: space-around;
-    }
-
-    .list--nav li {
-      width: calc(100% / 3);
-      background: none;
-      text-align: center;
-    }
-
-    .list--nav a {
-      display: block;
-      padding: 0.85rem 0;
-      font-size: 1rem;
-      font-weight: 600;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: #fbff04;
-      transition: color 0.3s ease;
-    }
-
-    .card__body {
-      position: absolute;
-      top: 20%;
-      transform: translateY(-50%);
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .card__info {
-      color: #ff0000;
-      position: relative;
-      padding-right: 1.25rem;
-      width: 70%;
-      flex-basis: 50%;
-    }
-
-    .card__title {
-      margin-bottom: 1rem;
-      margin-top: 0rem;
-      font-size: 2rem;
-      font-weight: 200;
-      text-transform: uppercase;
-    }
-
-    .card__slug {
-      margin-bottom: 1rem;
-      color: rgba(255, 255, 255, 0.95);
-    }
-
-    .card__btn {
-      display: inline-block;
-      padding: .65rem 1.5rem;
-      font-size: .8rem;
-      font-weight: 600;
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      color: #ffffff;
-      background-color: #007bff;
-      border: 0;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-      margin-top: 5px;
-    }
-
-    .card__video {
-      float: right;
-      width: 580px;
-      height: 320px;
-      margin-right: 0px;
-      flex-basis: 30%;
-    }
-
-    .imdb-info {
-      position: fixed;
-      bottom: 0;
-      left: 60%;
-      right: 0;
-      padding: 5px;
-      background-color: rgba(0, 0, 0, 0.8);
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-    }
-
-    .imdb-logo {
-      width: 30px;
-      height: 15px;
-      margin-right: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="card">
@@ -142,6 +17,7 @@
           </ul>
         </nav>
       </header>
+      
       <div class="card__video">
         <div class="card__info">
           <h1 class="card__title">Joker</h1>
@@ -149,14 +25,16 @@
           <iframe width="640" height="360" src="https://www.youtube.com/embed/zAGVQLHvwOY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
+      
+      <footer class="card__footer">
+        <!-- IMDb Information -->
+        <div class="imdb-info">
+          <img src="images/imdb.png" alt="IMDb Logo" class="imdb-logo">
+          <li>2019 &emsp; &emsp; 122min &emsp; &emsp; Drama | Thriller &emsp; &emsp; 8.5/10</li>
+        </div>
+      </footer>
+      
     </div>
-    <footer class="card__footer">
-      <!-- IMDb Information -->
-      <div class="imdb-info">
-        <img src="images/imdb.png" alt="IMDb Logo" class="imdb-logo">
-        <li>2019 &emsp; 122min &emsp; Drama | Thriller &emsp; 8.5/10</li>
-      </div>
-    </footer>
   </div>
 </body>
 </html>
